@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+/* Root Variables */
+:root {
+  --pixel-font: 'Pixelify Sans', normal, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  background: linear-gradient(rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.5)),
+              url('../../public/bg.png') center/cover no-repeat fixed;
+  padding-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff; /* Adjust text color for better visibility on the background */
+}
+
+.mainpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../public/bg.png'); /* Update with the correct path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensure the background covers the entire viewport height */
+    padding: 20px;
+    color: #fff; /* Adjust text color for better visibility on the background */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    font-family: var(--pixel-font);
+}
+
+.navbar-title {
+  font-family: var(--pixel-font);
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+.user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+.greet {
+    width: 100%;
+    font-family: var(--pixel-font);
+    font-weight: 100;
+    text-align: left;
+    color: white;
+}
+
+.list {
+    width: 100%;
+}
+
+.l-header{
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 40px;
+}
+
+.scroll-container {
+  margin-top: -20px;
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.person-box {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 200px;
+  margin-right: 10px;
+  text-align: center;
+  backdrop-filter: blur(50px);
+  background-image: linear-gradient(transparent, black);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.person-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.person-name {
+  margin: 5px 0;
+  color: white;
+}
+
+.chat-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
