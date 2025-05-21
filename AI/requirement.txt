@@ -1,0 +1,13 @@
+langchain==0.1.17
+langchain-community==0.0.27
+langchain-core==0.1.30
+sentence-transformers==2.5.1
+faiss-cpu==1.7.4
+pydantic==2.6.3
+pypdf==4.0.2
+numpy==1.26.3
+torch==2.1.2
+transformers==4.38.2
+huggingface-hub==0.20.3
+protobuf==4.25.2
+typing-extensions==4.9.0
